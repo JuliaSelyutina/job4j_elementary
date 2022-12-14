@@ -4,7 +4,7 @@ public class Variables {
     public static void main(String[] args) {
         int age = 18;
         System.out.println(age);
-        float length = 78.0332F;
+        float length = 78.0332;
         System.out.println(length);
         boolean baby = true;
         System.out.println(baby);
