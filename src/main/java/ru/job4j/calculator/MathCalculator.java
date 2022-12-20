@@ -1,6 +1,6 @@
 package ru.job4j.calculator;
 
-import ru.job4j.math.MathFunction;
+import ru.job4j.math.*;
 
 public class MathCalculator {
     public static double sumAndMultiply(double first, double second) {
