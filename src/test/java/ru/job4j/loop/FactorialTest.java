@@ -28,12 +28,4 @@ class FactorialTest {
         int out = Factorial.calc(n);
         assertThat(out).isEqualTo(expected);
     }
-
-    @Test
-    public void whenCalculateFactorialForNegativeSixThenZero() {
-        int expected = 0;
-        int n = -6;
-        int out = Factorial.calc(n);
-        assertThat(out).isEqualTo(expected);
-    }
 }
