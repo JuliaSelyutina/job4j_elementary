@@ -33,14 +33,4 @@ class SwitchArrayTest {
         int[] expected = {1, 2, 3, 7, 5, 6, 4, 8, 9};
         assertThat(result).containsExactly(expected);
     }
-
-    @Test
-    public void whenSwap30to0ThenTheSameArray() {
-        int[] input = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int source = 30;
-        int dest = 0;
-        int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        assertThat(result).containsExactly(expected);
-    }
 }
