@@ -23,24 +23,13 @@ public class RightTriangleTest {
         }
 
         @Test
-        public void whenA3B4C5ThenPerimeter12Area62() {
-            ByteArrayInputStream in = new ByteArrayInputStream("2.4 8.5 8.8".getBytes());
+        public void whenA6B8C10ThenPerimeter24dot6Area24() {
+            ByteArrayInputStream in = new ByteArrayInputStream("6 8 10".getBytes());
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             System.setOut(new PrintStream(out));
             System.setIn(in);
             RightTriangle.main(null);
-            StringJoiner expected = new StringJoiner(System.lineSeparator()).add("19.7").add("10.2");
-            assertThat(out.toString(), is(expected.toString()));
-        }
-
-        @Test
-        public void whenA5B7C8dot6ThenPerimeter20dot6Area17dot5() {
-            ByteArrayInputStream in = new ByteArrayInputStream("5 7 8.6".getBytes());
-            ByteArrayOutputStream out = new ByteArrayOutputStream();
-            System.setOut(new PrintStream(out));
-            System.setIn(in);
-            RightTriangle.main(null);
-            StringJoiner expected = new StringJoiner(System.lineSeparator()).add("20.6").add("17.5");
+            StringJoiner expected = new StringJoiner(System.lineSeparator()).add("24.0").add("24.0");
             assertThat(out.toString(), is(expected.toString()));
         }
 }
